@@ -1,21 +1,22 @@
 // ---------------------------------------------------------
 // Declaração de Variáveis e Tipos de Dados
-let nome = "Hayala"; //Valor pode ser alterado depois -- string
+let nome = "Hayala"; //Valor pode ser alterado depois -- string -- entre aspas
 const idade = 23; //Valor não pode ser alterado -- number
 var estado = "Minas Gerais"; //Forma antiga de declarar variável, não é recomendada!
 
 let estaLogado = false; //ou true -- boolean
-let frutas = ["Maçã", "Banana", "Laranja"]; //Array
+let frutas = ["Maçã", "Banana", "Laranja"]; //Array -- entre colchetes
 let pessoa = 
 { 
     nome: "Hayala", 
     idade: 23 
-}; //Objeto
+}; //Objeto -- entre chaves
 
 // ---------------------------------------------------------
 
 // Exercicio 1 - Nome e frase
-console.log("Meu nome é " + nome + " e eu tenho " + idade + " anos.");
+console.log("Meu nome é " + nome + " e eu tenho " + idade + " anos."); 
+// console.log é usado para imprimir no terminal (é o printf do JavaScript)
 
 //---------------------------------------------------------
 // Exercicio 2 - Cálculo de Preço com Desconto
