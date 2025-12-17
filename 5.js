@@ -67,13 +67,60 @@ for (let n = 0; n < numeros.length; n++) {
 }
 
 // Valdando dados com WHILE:
-let senha = 5813;
-let tentativa;
-do {
-  tentativa = prompt("Digite a senha:"); // Supondo que o prompt esteja disponível (só funciona em navegadores)
-} while (tentativa !== senha);
+//let senha = 5813;
+//let tentativa;
+//do {
+ // tentativa = prompt("Digite a senha:"); // Supondo que o prompt esteja disponível (só funciona em navegadores)
+//} while (tentativa !== senha);
 
-console.log("Acesso liberado!");
+//console.log("Acesso liberado!");
 
 // --------------------------------------------------------------------------------
-// EXERCÍCIOS
+// EXERCÍCIOS 
+// QUESTÃO 1 - Use um loop for para imprimir os números de 1 a 10 no console.
+
+for (let num= 1; num <= 10 ; num++) {
+  console.log(num);
+}
+
+// QUESTÃO 2 - Crie uma lista de nomes e use um for para exibir cada nome.
+
+let nomes = ["Jennie", "Jimin", "Carlos Birinto", "Carina Leone"];
+
+for (let x = 0; x < nomes.length; x++) {
+  console.log(nomes[x]);
+}
+
+// QUESTÃO 3 - Escreva um código que verifica se um número em um array é maior que 10. 
+// Pare de verificar assim que encontrar o primeiro.
+
+let lista = [5, 3, 8, 22, 7, 14];
+for (let y = 0; y < lista.length; y++) {
+  if (lista[y] > 10) {
+    console.log(`Número maior que 10 encontrado: ${lista[y]}`);
+    break;
+  }
+}
+
+// QUESTÃO 4 - Use um while para simular um contador de 10 a 0 e exiba "Lançamento!" quando atingir 0.
+
+let z = 10;
+
+while (z <= 10 && z !== 0) {
+  console.log(z);
+  z--;
+  if (z === 0) {
+    console.log("Lançamento!");
+  }
+}
+
+// QUESTÃO 5 - Escreva um loop que calcula o fatorial de um número (ex: 5! = 5*4*3*2*1)
+
+let fatorial = 5;
+let resultado = 1;
+
+for (let a = fatorial; a > 0; a--) {
+  resultado *= a;
+}
+console.log(`Fatorial de ${fatorial} é ${resultado}`);
+
